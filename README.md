@@ -5,7 +5,9 @@
 Whenever a patient visits a hospital it takes a significant amount of time before the updated health reports of the patient arrives making it difficult for the proper detection and hence decision making for the health official. This situation is tedious and potentially harmful for both parties.We created DOC 24/7, which is an all-in-one platform which one can use sitting in their homes by just clicking on their phones to book an appointment , to order medicines , masks and covid kit during this pandemic era of Covid-19. We intend to create a platform which aims at providing the potential patient containing the information of the individual- past medical records, recurring medical problems etc. which automatically reduces the chaos during admission of patients.
 <br>
 
-
+## Demo
+https://systemzombieshospitalmanagement.netlify.app/ 
+(Type in Tanya as username and 123456 as password)
 
 ## 🛠️ Built With
 - HTML
@@ -25,9 +27,17 @@ Whenever a patient visits a hospital it takes a significant amount of time befor
 - Clear walkthrough
 - Data Privacy 
 
+## 🚀 Future Goals
+- Speech Recognition
+- App Development
+- Addition of Chatbot
+- Translation of Pages 
+- Involvement of Backend and API
 
 ## 🙋🏻‍♂️ Contributors
 * [Pushkar Singh](https://github.com/Pushkar03)
 * [Tanya Rastogi](https://github.com/iamtanya-22)
 * [Mohit Krishan Gautam](https://github.com/mohitgautam1802)
 * [Devang Mishra](https://github.com/devangmishra01)
+
+## Made with ❤️ by Team System Zombies
