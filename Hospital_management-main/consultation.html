@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DOC-24/7 | Consultation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+    }
+
+    .collection-item p{
+      color: blue;
+    }
+
+
+    
+
+    div.scrollmenu {
+      background-color: rgb(253, 251, 251);
+      overflow: auto;
+      white-space: pre-line;
+      display: inline-flex;
+      width: 100%;
+
+    }
+
+    div.scrollmenu a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+
+    div.scrollmenu a:hover {
+      /* background-color: #777; */
+    }
+
+    .picture-intro a img {
+      /* font-size mayhem: 22px; */
+      height: 500px;
+      /* wi heydth: p hey x; */
+      
+    }
+
+    .collection li:hover{
+      color: white;
+      /* font-size: 333px; */
+    }
+
+    
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 8%;
+      padding-right: 8%;
+      background-color: rgb(8, 8, 90);
+    }
+
+    .logo {
+      color: white;
+      font-size: 35px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-weight: bolder;
+
+
+    }
+
+    nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 20px ;
+      
+    }
+
+    nav ul li a:hover {
+      color: #3d6be9;
+      transition: .4s;
+    }
+
+    .menu-btn {
+      color: white;
+      font-size: 23px;
+      cursor: pointer;
+      display: none;
+    }
+
+
+
+
+    @media screen and (max-width: 1390px) {
+
+      /* nav ul{
+	display: none;
+}
+
+ */
+      /* nav ul{
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background: #111;
+	} */
+      .menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 77vh;
+        background: rgb(36, 11, 175);
+        top: 64px;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+        transition: all .5s;
+        /* margin: ; */
+
+        opacity: 0;
+      }
+
+      .show-sidebar {
+        opacity: 1;
+      }
+
+      .nav-links li {
+        display: block;
+        font-size: 30px;
+        margin: 10px;
+        margin-top: 60px;
+
+      }
+
+      .nav-links li a:hover {
+        background: none;
+        color: #f9004d;
+      }
+      .mid-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 2%;
+      margin-left: 2%;
+
+    }
+      .mid-section-img img{
+        width: 100%;
+      }
+
+      .header h1{
+        font-size: 25px;
+      }
+      
+      .doctor-specialization-header h1{
+        font-size: 35px;
+      }
+
+      .picture-intro a img {
+      /* font-size: 22px; */
+      height: 250px;
+      /* width: px; */
+    }
+
+
+
+    }
+
+    .picture-intro a img {
+      /* font-size: 22px; */
+      height: 200px;
+      width: 300px;
+      border-radius: 10px;
+      
+      /* width: px; */
+    }
+
+    .picture-intro h3,h4{
+      margin-top: 0px;
+      text-align: center;
+    }
+
+    .picture-intro{
+      /* margin-bottom: 0%; */
+    }
+
+
+    .mid-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .header h1{
+      font-size: 45px;
+      color: blue;
+    }
+    .doctor-specialization-header{
+      font-size: 45px;
+      font-weight: bolder;
+    }
+    .correction{
+      margin-top: 50px;
+    }
+    .present-icon{
+      color: #3d6be9;
+    }
+    .footer{
+        margin-top: 80px;
+        background: #3d6be9;
+        color: #ffffff;
+    }
+    .footer .col-4{
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer1 h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .footer h3{
+        font-size: 20px;
+    }
+    .footer hr{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #copyright{
+       text-align: center;
+        padding: 10px;
+        background: rgb(8, 8, 90);
+        color: #ffffff;
+        font-weight: 500;
+        /* font-size: 15px; */
+
+    }
+    #copyright h3{
+      font-size: 22px;
+    }
+    .footer .grid-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+        grid-gap: 2em;
+        padding: 2rem;
+    }
+    /* .collection-item{
+      color: white;
+    } */
+    
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+
+    <nav>
+      <h2 class="logo">DOC<span>24/7</span></h2>
+      <ul class="nav-links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a class="present-icon" href="consultation.html">Consultation</a></li>
+        <li><a href="emergency.html">Emergency</a></li>
+        <li><a href="login.html">Sign in</a></li>
+      </ul>
+
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </nav>
+
+
+    <div class="mid-section">
+      <div class="mid-section-img">
+
+        <img src="img/consultation.png" alt="">
+
+        <img src="technophilia/images/consultation.png" alt="">
+
+      </div>
+      <div class="finding-appointment">
+        <div class="header">
+          <h1>FIND A DOCTOR AND BOOK ONLINE MEET</h1>
+          <!-- <p>Easily book a virtual meet with doctor anywhere in the world DOC24/7</p> -->
+        </div>
+        <!-- <div class="input-bar">
+          <input type="text" placeholder="Search" class="search-bar">
+          <i class="fas fa-search"></i>
+        </div> -->
+        <div class="doctor-specialization">
+          <div class="doctor-specialization-header">
+            <h1>BROWSE DOCTORS :</h1>
+            <h2>CATEGORIES</h2>
+
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <div class="card" id="main">
+                  <div class="card-action">
+                    <!-- <h5 id="task-title">Tasks</h5> -->
+                    <div class="input-field col s12">
+                      <input type="text" placeholder="Search" name="filter" id="filter">
+                      <!-- <label for="filter">Filter Tasks</label> -->
+                    </div>
+                    <ul class="collection">
+                      <li>
+                        <a href="https://forms.gle/eTrnrB6i5hMcqkYw7" class="collection-item"> <p class="end-goal" > Allergist </p></a>
+                      </li>
+                      
+                      <li>
+                       <a   class="collection-item" href="https://forms.gle/xVBidWu2ZsnB7X2e8"> <p class="end-goal" > General Surgeons  </p>  </a>    
+                      </li>
+                      <li>
+                      <a  class="collection-item" href="https://forms.gle/UJjVGUBqZhZh9bSB8"><p class="end-goal" >  Cardiologists   </p>    </a>
+                      </li>
+                      <li>
+                       <a  class="collection-item end-goal" href="https://forms.gle/nnyBF58Wf7uPMVUT7"> <p class="end-goal" > Dermatologists  </p>    </a>
+                      </li>
+                      <li>
+                       <a  class="collection-item end-goal"  href="#"> <p class="end-goal" > Gastroenterologists </p> </a>
+                      </li>
+                      <li>
+                        <a  class="collection-item" href="https://forms.gle/c9WiNYCpMjL85raA9"> <p class="end-goal" > Neurologists   </p>    </a>
+                      </li>
+                      <li>
+                       <a  class="collection-item" href="https://forms.gle/SyjSLVKgTNSaH94J8"> <p class="end-goal" > Gynecologists   </p>     </a>
+                      </li>
+
+                    </ul>
+                    <!-- <a href="#" class="clear-tasks btn black">Clear Tasks</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="scrollmenu">
+
+
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/SyjSLVKgTNSaH94J8"><img src="img/doctor1.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/SyjSLVKgTNSaH94J8"><img src="technophilia/images/doctor1.jpg" alt=""></a>
+
+          <h3>Dr. Seema Fernadez</h3>
+          <h4>Gynecologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/c9WiNYCpMjL85raA9"><img src="img/doctor2.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/c9WiNYCpMjL85raA9"><img src="technophilia/images/doctor2.jpg" alt=""></a>
+
+          <h3>Dr. Rachel Anderson</h3>
+          <h4>Neurologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/nnyBF58Wf7uPMVUT7"><img src="img/doctor3.jpg" alt=""></a> -->
+
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScnrFFW5rPR-_y2NNPKtQv3DG3pppr_Ju_62vBPl4rWT1Zmvw/viewform"><img src="technophilia/images/doctor3.jpg" alt=""></a>
+
+          <h3>Dr. Mark Manson</h3>
+          <h4>Dermatologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/UJjVGUBqZhZh9bSB8"><img src="img/doctor4.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/UJjVGUBqZhZh9bSB8"><img src="technophilia/images/doctor4.jpg" alt=""></a>
+
+          <h3>Dr. Ellyse Perry</h3>
+          <h4>Cardiologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/xVBidWu2ZsnB7X2e8"><img src="img/doctor5.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/xVBidWu2ZsnB7X2e8"><img src="technophilia/images/doctor5.jpg" alt=""></a>
+
+          <h3>Dr. Brandon King</h3>
+          <h4>General Surgeons</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/c9WiNYCpMjL85raA9"><img src="img/doctor6.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/c9WiNYCpMjL85raA9"><img src="technophilia/images/doctor6.jpg" alt=""></a>
+
+          <h3>Dr. Bob Lesner</h3>
+          <h4>Neurologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/UJjVGUBqZhZh9bSB8"><img src="img/doctor7.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/UJjVGUBqZhZh9bSB8"><img src="technophilia/images/doctor7.jpg" alt=""></a>
+
+          <h3>Dr. Patrick Dang</h3>
+          <h4>Cardiologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/nnyBF58Wf7uPMVUT7"><img src="img/doctor8.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/nnyBF58Wf7uPMVUT7"><img src="technophilia/images/doctor8.jpg" alt=""></a>
+
+          <h3>Dr. Lisa Mishra</h3>
+          <h4>Dermatologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro correction">
+
+          <a href="https://forms.gle/SyjSLVKgTNSaH94J8"><img src="technophilia/images/doctor9.jpg" alt=""></a>
+
+          <h3>Dr. Lamb Patnaik</h3>
+          <h4>Gynecologists</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro">
+
+          <!-- <a href="https://forms.gle/xVBidWu2ZsnB7X2e8"><img src="img/doctor10.jpg" alt=""></a> -->
+
+          <a href="https://forms.gle/xVBidWu2ZsnB7X2e8"><img src="technophilia/images/doctor10.jpg" alt=""></a>
+
+          <h3>Dr. Merry Ferris</h3>
+          <h4>General Surgeons</h4>
+        </div>
+      </a>
+      <a>
+        <div class="picture-intro correction">
+          <a href="https://forms.gle/eTrnrB6i5hMcqkYw7"><img src="technophilia/images/doctor11.jpeg" alt=""></a>
+          <h3>Dr. Hamilton Cartwright</h3>
+          <h4>Allergist</h4>
+        </div>
+      </a>
+
+
+    </div>
+
+  </div>
+  <hr> 
+		<footer id="copyright">
+		   <h3>Made with love by Team System Zombies @2022. All Rights Reserved.</h3>
+	  </footer>
+
+  <!-- <h2>Horizontal Scrollable Menu</h2>
+<p>Resize the browser window to see the effect.</p> -->
+  <script>
+    const toggleBtn = document.querySelector(".menu-btn");
+    const sidebar = document.querySelector(".nav-links");
+    const taskList = document.querySelector('.collection');
+    // const clearBtn = document.querySelector('.clear-tasks');
+    const filter = document.querySelector('#filter');
+
+    toggleBtn.addEventListener("click", function () {
+      sidebar.classList.toggle("show-sidebar")
+    })
+
+    loadEventListeners();
+
+    function loadEventListeners() {
+      filter.addEventListener('keyup', filterTasks)
+    }
+
+    function filterTasks(e) {
+      const text = e.target.value.toLowerCase();
+
+      document.querySelectorAll('.end-goal').forEach(function (task) {
+        const item = task.firstChild.textContent;
+        if (item.toLowerCase().indexOf(text) != -1) {
+          task.style.display = 'block';
+        } else {
+          task.style.display = 'none';
+        }
+      });
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

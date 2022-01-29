@@ -1,0 +1,415 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+}
+.hero{
+	height: 80vh;
+	width: 100%;
+	background-image: url('../images/home.jpg');
+	background-size: cover;
+	background-position: center;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 8%;
+	padding-right: 8%;
+	background-color: rgb(8, 8, 90);
+}
+.logo{
+	color: white;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+
+
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px  25px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+nav ul li a:hover{
+	color: #3d6be9;
+	transition: .4s;
+}
+.content{
+	position: absolute;
+	top: 40%;
+	/* bottom: 50%; */
+	left:8%;
+	transform: translateY(-50%);
+	max-width: 40%;
+}
+.content h4{
+	color: blue;
+	margin: 7px 2px 20px;
+	/* font-size: 75px; */
+}
+.content h1{
+	font-size: 67px;
+}
+.content p{
+	margin-top: 22px;
+}
+.practices{
+	
+	margin-top: 3%;
+}
+.practices i{
+	font-size: 70px;
+	padding: 10px 10px;
+	background-color: white;
+	margin: 0 5px;
+	border-radius: 15px;
+}
+.btn i{
+	/* background-color: rgb(15, 15, 221);
+	color: white;
+	text-decoration: none;
+	font-weight: bold; */
+	/* padding-top: 22px; */
+	font-size: 10px;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+	transform: translateY(-23%);
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #3331ca;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: left;
+	margin: 10px 10px;
+	color: white;
+}
+.card h5{
+	color: white;
+	margin-top: 28px;
+	display: block;
+	text-align: left;
+	font-size: 23px;
+}
+.pra p{
+	display: block;
+	text-align: left;
+	color: white;
+	margin-top: 19px;
+}
+.common{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.common i{
+	font-size: 13px;
+	color: rgb(8, 175, 241);
+
+}
+.fa-phone-alt{
+	/* color: black; */
+	border: 2px solid white;
+	padding: 7px;
+	border-radius: 100%;
+}
+.common span{
+	color: white;
+	font-size: 22px;
+	margin-right: 10px;
+}
+.viewTimeline{
+	border: 1px solid white;
+	max-width: fit-content;
+	margin-top: 8px;
+	cursor: pointer;
+}
+.timing{
+	margin-top: 22px;
+}
+.time{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	margin: 10px 0px;
+}
+.box1{
+	background-color: rgb(15, 15, 97);
+}
+.box2{
+	background-color: rgb(21, 21, 228);
+}
+.box3{
+	background-color: rgb(51, 157, 206);
+}
+
+/* .toggle-bar{
+	display: none;
+} */
+.menu-btn{
+	color: white;
+	font-size: 23px;
+	cursor: pointer;
+	display: none;
+}
+
+.login-tab{
+	position: relative;
+  height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  background:rgb(88, 88, 221) ;
+  /* opacity: 0; */
+  background-size: cover;
+  /* filter: brightness(50%); */
+}
+form{
+	max-width: 100%;
+}
+
+.login-image{
+	height: 100vh;
+	width: 30%;
+	top: 0;
+	right: 0;
+	
+	/* overflow: hidden; */
+	
+}
+.login-image img{
+	height: 100%;
+}
+.contactForm form h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.contactForm{
+	transform: translateX(-22%);
+}
+
+
+/* welcome page */
+
+/* .welcomeContent{
+	position: relative;
+	height: 100vh;
+	/* padding: ; */
+/* <<<<<<< HEAD */
+	/* background-image: url(Hospital_management/img/WhatsAppImag2022-01-22at4.41.38PM.jpeg); */
+
+	/* background-image: url('../images/welcome.jpeg'); */
+/* >>>>>>> 5c3e23f44cab03bf21710407591aecfcd37bf36d */
+	/* background-size: cover;
+	display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* background-color: blue ; */
+
+
+.welcomeWritten{
+	max-width: 800px;
+	width: 600px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	height: 90vh;
+	margin-right: 2%;
+	border-radius: 20px;
+
+}
+.hey{
+	background-color:white ;
+}
+
+.introduction{
+	margin-top: -300px;
+}
+
+.introduction h1{
+	margin: 20px ;
+	font-size: 70px;
+	color: blue;
+	margin-top: 200px;
+
+}
+
+.introduction h2{
+	margin: 40px;
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+.knowMore{
+	border: none;
+	font-size: 44px;
+	background-color: blue;
+	color: white;
+	padding: 3%;
+	border-radius: 15px;
+}
+
+.knowMore a{
+	font-style: none;
+	color: white;
+	text-decoration: none;
+	font-size: 39px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1390px){
+        /* nav ul{
+	display: none;
+}
+
+ */
+	/* nav ul{
+		position: absolute;
+		height: 100vh;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background: #111;
+	} */
+	.menu-btn{
+		display: block;
+	}
+	.nav-links{
+		position: absolute;
+		width: 100%;
+		height: 77vh;
+		background: rgb(36, 11, 175) ;
+		top: 64px;
+		right: 0;
+		text-align: center;
+		z-index: 1;
+		transition: all .5s;
+		/* margin: ; */
+		
+		opacity: 0;
+	}
+	.show-sidebar{
+		opacity: 1;
+	}
+	.nav-links li{
+		display: block;
+		font-size: 30px;
+		margin: 10px;
+		margin-top: 60px;
+
+	}
+	.nav-links li a:hover{
+		background: none;
+		color: #f9004d;
+	}
+
+	
+	.content {
+		position: absolute;
+		top: 40%;
+		bottom: 50%;
+		left: 13%;
+		right: 13%;
+		transform: i;
+		max-width: 100%;
+		display: flex;
+		z-index: 0;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		/* justify-content: center; */
+		/* align-items: center; */
+	}
+	.content h1 {
+		font-size: 80px;
+	}
+	.practices i {
+		font-size: 100px;
+		padding: 10px 10px;
+		background-color: white;
+		margin: 0 5px;
+		border-radius: 15px;
+		/* transform: translateY(-30%); */
+	}
+	.box {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		min-height: 400px;
+		transform: translateY(1%);
+		max-width: 100%;
+		width: 100%;
+	}
+	.card {
+		height: 365px;
+		width: 90%;
+		padding: 20px 35px;
+		background: #3331ca;
+		border-radius: 20px;
+		margin: 15px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+	}
+	.box1{
+		background-color: rgb(15, 15, 97);
+	}
+	.box2{
+		background-color: rgb(21, 21, 228);
+	}
+	.box3{
+		background-color: rgb(51, 157, 206);
+	}
+
+}
+
