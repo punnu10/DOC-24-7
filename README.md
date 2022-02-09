@@ -7,7 +7,7 @@ Whenever a patient visits a hospital it takes a significant amount of time befor
 
 ## Demo
 https://systemzombieshospitalmanagement.netlify.app/ 
-(Type in Tanya as username and 123456 as password)
+(Type in anything as username and 123456 as password)
 
 ## 🛠️ Built With
 - HTML
